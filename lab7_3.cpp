@@ -22,7 +22,7 @@ main(){
         }
         else {cout<<" Asset :  ";
          cin>>asset;
-             if(asset>6900000){
+             if(asset>69000000){
         status="MARRIED";
     }
     else
