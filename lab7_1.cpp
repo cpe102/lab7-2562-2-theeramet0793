@@ -7,11 +7,16 @@ int main()
   cout << "Input your rank:";
   cin >> rank;
   
-     if(rank=='S')cout << "You have received Super Ultra Rare Unit!!!\n";
-        else if(rank=='A') cout << "You have received 5 gems.\n";
-          else if(rank=='B') cout << "You have received 1 gems.\n";
-            else if(rank=='C')  cout << "You have received 2000 coins.\n";
-              else if(rank=='D') cout << "You have received very KAK items.\n";
+     if(rank=='S')goto p1;
+     if(rank=='A')goto p2;
+     if(rank=='B')goto p3;
+     if(rank=='C')goto p4;
+     if(rank=='D')goto p5;
   
+     p1: cout << "You have received Super Ultra Rare Unit!!!\n";
+     p2: cout << "You have received 5 gems.\n";
+     p3: cout << "You have received 1 gems.\n";
+     p4: cout << "You have received 2000 coins.\n";
+     p5: cout << "You have received very KAK items.\n";
   return 0;
 }
